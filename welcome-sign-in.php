@@ -3,6 +3,7 @@
 	// $default variable with empty value
 	$name = ' ';
 	$email = ' ';
+	$password = ' ';
 
 	// $_SERVER -> bien global, array
 	
@@ -11,11 +12,11 @@
 		// echo "<pre>";
 		// var_dump($_GET);
 		// echo "</pre>";
-		if(isset($_GET['name123'])) {
-			$name = $_GET['name123'];
+		if(isset($_GET['your-email'])) {
+			$email = $_GET['your-email'];
 		}
-		if(isset($_GET['email123'])) {
-			$email = $_GET['email123'];
+		if(isset($_GET['your-password'])) {
+			$password = $_GET['your-password'];
 		}
 	}
 
@@ -26,10 +27,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- 	<h1>Welcome</h1>
- 	<p> Name: <?php echo $name; ?> </p>
- 	<p> Email: <?php echo $email; ?></p>
+	<div class="return">
+		<img src="github-icon.png"><br>
+	 	<h1>Welcome</h1><br>
+	 	<p> Email: <?php echo $email; ?> </p><br>
+	 </div>	
 </body>
 </html>

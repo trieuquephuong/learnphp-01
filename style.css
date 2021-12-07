@@ -1,0 +1,36 @@
+img {
+	width: 200px;
+	text-align: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+body .return{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 10px;
+}
+body .sign-in h1, body .create-new-account h1 {
+	font-size: 46px;
+	margin: 20px;
+}
+
+input, button {
+	padding: 10px;
+	width: 300px;
+}
+
+button a {
+	text-decoration: none;
+	color: black;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
